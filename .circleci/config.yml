@@ -59,7 +59,7 @@ jobs:
       - run:
           name: Destroy previous bucket  CloudFormation stack
           command: |
-            aws cloudfront delete-stack --stack-name stack-create-bucket-${OldBucketID}       
+            aws cloudformation delete-stack --stack-name stack-create-bucket-${OldBucketID}       
 workflows:
   promoting:
     jobs:
